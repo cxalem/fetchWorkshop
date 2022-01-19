@@ -21,11 +21,12 @@ h1 {
 
 #app {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   height: 100vh;
   column-gap: 15px;
+  row-gap: 15px;
   justify-items: center;
   margin-top: 20px;
+  padding: 0 20px;
 
   div.itemContainer {
     display: flex;
@@ -33,26 +34,46 @@ h1 {
     height: fit-content;
     padding: 10px 30px;
     border-radius: 10px;
-    width: 350px;
+    width: -webkit-fill-available;
     box-shadow:  0px 0px 20px #bababa80;
     
     &:hover {
       background: #f3f3f3;
       box-shadow:  0px 0px 40px #bababad0;
     }
-
+  
     img.image {
       width: 100px;
       border-radius: 50px;
     }
-
+  
     div h2 {
       color: $fontColor;
       font-size: 2rem;
     }
-
+  
     div p {
       font-size: 1.5rem;
     }
   }
 }
+
+@media screen and (min-width: 340px){
+  #app {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 640px){
+  #app {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #app {
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+}
+
