@@ -21,8 +21,8 @@ h1 {
   display: -ms-grid;
   display: grid;
   height: 100vh;
-  -webkit-column-gap: 15px;
-          column-gap: 15px;
+  -webkit-column-gap: 45px;
+          column-gap: 45px;
   row-gap: 15px;
   justify-items: center;
   margin-top: 20px;

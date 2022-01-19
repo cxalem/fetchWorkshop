@@ -22,7 +22,7 @@ h1 {
 #app {
   display: grid;
   height: 100vh;
-  column-gap: 15px;
+  column-gap: 45px;
   row-gap: 15px;
   justify-items: center;
   margin-top: 20px;
@@ -73,7 +73,6 @@ h1 {
 @media screen and (min-width: 1024px){
   #app {
     grid-template-columns: 1fr 1fr 1fr;
-    
   }
 }
 
